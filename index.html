@@ -4,9 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Assets/Styles/styles.css">
+    <title>Da Dashboard</title>
 </head>
 <body>
+    <header class="dashboard-header bg-dark text-light text-center p-2">
+        <h1>Da Weather</h1>
+    </header>
     
+    <main class="container">
+        <section class="row my-4">
+            <section id="search-card" class="col-12 col-md-4">
+                <h3>Search by City</h3>
+    
+                <form id="search-form" class="col">
+                    <input name="city" id="city" type="text" class="form-input">
+                    <button type="submit" class="btn">Search</button>
+                </form>
+    
+                <div id="search-history">
+                    <ul id="search-list" class="col">
+    
+                    </ul>
+                </div>
+            </section>
+
+            <section id="results-card" class="col-12 col-md-8 justify-content-around">
+                <div id="current-conditions">
+                    <h3 id="city-date">
+                        <img id="current-icon">
+                    </h3>
+                    <p id="current-temp"></p>
+                    <p id="current-wind"></p>
+                    <p id="current-humidity"></p>
+                </div>
+    
+                <br>
+
+                <h3 id="future-conditions-header" style="visibility: hidden;">5 Day Forecast:</h3>
+                <div id="future-conditions" class="row justify-content-around">
+                </div>
+    
+            </section>
+        </section>
+    </main>
+    <script src="Assets/Js/mainscript.js"></script>    
 </body>
 </html>
