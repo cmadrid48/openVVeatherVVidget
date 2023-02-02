@@ -18,7 +18,7 @@ The weather dashboard provides up-to-date information about current and future w
 
 ## Installation
 
-Visit github [HERE]('''''') to install, or contribute.
+Visit github [HERE](https://cmadrid48.github.io/openVVeatherVVidget/) to install, or contribute.
 
 ```bash
 git clone https://github.com/cmadrid48/openVVeatherVVidget.git [destination]
@@ -32,3 +32,5 @@ to discuss what you would like to change.
 Please make sure to update tests as appropriate.
 
 ## License
+
+NA
